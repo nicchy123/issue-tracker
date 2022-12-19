@@ -36,6 +36,7 @@ const deleteIssue = id => {
   console.log(remainingIssues)
   console.log(id)
   localStorage.setItem('issues', JSON.stringify(remainingIssues));
+  window.location.reload();
 }
 
 const fetchIssues = () => {
